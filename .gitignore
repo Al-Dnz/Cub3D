@@ -1,0 +1,9 @@
+*.swp
+*.swo
+prog
+a.out
+*.o
+*.bmp
+./trashes
+.vscode
+Cub3D

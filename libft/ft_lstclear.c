@@ -1,0 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adenhez <adenhez@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/10 22:41:21 by adenhez           #+#    #+#             */
+/*   Updated: 2020/11/10 22:41:24 by adenhez          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	t_list	*li;
+
+	if (*lst == NULL)
+		return ;
+	li = (*lst)->next != NULL ? (*lst)->next : NULL;
+	del((*lst)->content);
+	free(*lst);
+	*lst = li;
+	ft_lstclear(&(*lst), del);
+}
