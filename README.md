@@ -1,4 +1,4 @@
-# 42 CUB_3D
+# 42 CUB_3D_MAC
 
 ## QUICK LAUNCH
 
