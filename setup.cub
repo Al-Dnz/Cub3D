@@ -1,6 +1,6 @@
 R  1000 800
 
-S ./textures/barrel.xpm
+S ./textures/noubacub3d.xpm
 
 NO ./textures/redstone.xpm
 SO ./textures/bluestone.xpm
